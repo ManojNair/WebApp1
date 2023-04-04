@@ -17,7 +17,7 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-       IPAddress=  _contextAccessor.HttpContext.Connection.RemoteIpAddress.ToString();
+       IPAddress=  _contextAccessor.HttpContext.Connection.LocalIpAddress.ToString();
         
     }
 }
